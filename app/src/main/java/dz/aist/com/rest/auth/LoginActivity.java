@@ -43,10 +43,10 @@ public class LoginActivity extends AbstractSyncActivity {
         final Button submitBtn=(Button)findViewById(R.id.submit);
         submitBtn.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                //new FetchSecuredResourceTask().execute();
-                Intent intent=new Intent();
-                intent.setClass(LoginActivity.this,MainActivity.class);
-                startActivity(intent);
+                new FetchSecuredResourceTask().execute();
+                //Intent intent=new Intent();
+                //intent.setClass(LoginActivity.this,MainActivity.class);
+                //startActivity(intent);
             }
         });
     }
